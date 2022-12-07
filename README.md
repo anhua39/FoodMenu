@@ -13,7 +13,7 @@ Student1414362  Trần Cao Minh Đức
 Student1414334  Hứa Trường An 
 ============================
 
-eProject documentation at 
+eProject documentation at https://github.com/anhua39/Shale--food/tree/main/document
 
 ============================
 
