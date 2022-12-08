@@ -19,7 +19,6 @@ body {
   background-color: #e4e4e4b7 !important;
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
-
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link {
@@ -53,18 +52,16 @@ body {
 }
 
 /* RESPONSIVE USER */
-@media (min-width: 320px) and (max-width: 640px) {
-  #user {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media (min-width: 200px) and (max-width: 995px) {
+  .flex-column {
+    margin-left: 20px;
   }
 }
 
 /* User */
 .flex-column {
-  margin-left: 420px;
-  color: #000000;
+  color: black;
+  font-size: 18px;
 }
 
 .d-flex:hover {
@@ -193,17 +190,62 @@ body {
 
 /*End Recipes*/
 /* REPONSIVE MENU */
-@media (min-width: 320px) and (max-width: 640px) {
+@media (max-width: 2000px) {
   #load-data-menu .container .link-categogries .img-card {
-    height: 150px;
-    width: 150px;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
   }
 
   #load-data-menu .img-card {
-    /* display: ; */
+    margin-left: 98px;
+  }
+}
+@media (max-width: 900px) {
+  #load-data-menu .container .link-categogries .img-card {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+  }
+
+  #load-data-menu .img-card {
+    margin-left: 17px;
+  }
+}
+@media (max-width: 450px) {
+  #load-data-menu .container .link-categogries .img-card {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+  }
+
+  #load-data-menu .img-card {
+    margin-left: 6px;
+    margin-right: -15px;
+  }
+}
+@media (max-width: 400px) {
+  #load-data-menu .container .link-categogries .img-card {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+  }
+
+  #load-data-menu .img-card {
     margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+    margin-right: -15px;
+  }
+}
+@media (max-width: 350px) {
+  #load-data-menu .container .link-categogries .img-card {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+  }
+
+  #load-data-menu .img-card {
+    margin-left: auto;
+    margin-right: -20px;
   }
 }
 
@@ -1526,4 +1568,23 @@ header h3 {
   .projcard-innerbox {
     padding-top: 40px;
   }
+}
+
+
+/*shoping cart*/
+.item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-pay {
+  background-color: #C800Da;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.fa-ticket {
+  color: #0e1fa1;
 }

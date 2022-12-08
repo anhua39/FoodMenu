@@ -63,6 +63,14 @@
               </svg>
               <span>User</span>
             </a>
+            <li>
+              <a type="button" data-toggle="modal" data-target="#cart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+               
+                 <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+               </svg><sup><span class="total-count"></span></sup>
+               </a>
+              
+             </li>
           </li>
 
         </ul>
@@ -84,14 +92,14 @@
       <div id="load-data-menu">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./BEVERAGE.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
                 </div>
               </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./DESSERT.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/DESSERT.PNG" width="80%" alt="#">
@@ -99,7 +107,7 @@
               </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./bread.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BREAD.PNG" width="80%" alt="#">
@@ -107,7 +115,7 @@
               </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./pizza.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
@@ -155,7 +163,7 @@
             <h3 style="color: 	#7FFF00;">Planet Pizza</h3>
             <br>
             <h2 class="price">70€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Planet-Pizza" data-price="70" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -170,7 +178,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">Pizza Places <br> In Melbourne</h3>
             <h2 class="price">56€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Planet-Pizza-In-Melbourne" data-price="56" class="add-to-cart btn buy" >Buy Now</a>
           </div>
 
         </div>
@@ -186,7 +194,7 @@
             <h3 style="color: 	#7FFF00;"> Pizza Margherita</h3>
             <br>
             <h2 class="price">55€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Pizza-Margherita" data-price="55" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -202,7 +210,7 @@
             <h3 style="color: 	#7FFF00;">Pizza Party in New York</h3>
             <br>
             <h2 class="price">51€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Pizza-Party-in-NewYork" data-price="51" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -219,10 +227,10 @@
           </div>
 
           <div class="contentBox">
-            <h3 style="color: 	#7FFF00;"> Pizza</h3>
+            <h3 style="color: 	#7FFF00;"> Pizza Egypt</h3>
             <br>
             <h2 class="price">50€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#"  data-name="Pizza-Egypt" data-price="50" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -237,7 +245,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">Pizza Places <br> In Melbourne</h3>
             <h2 class="price">55€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Pizza-Places-In-Melbourne" data-price="55" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -253,7 +261,7 @@
             <h3 style="color: 	#7FFF00;"> Pizza Margherita</h3>
             <br>
             <h2 class="price">53€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Pizza-Margherita" data-price="53" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -266,15 +274,48 @@
           </div>
 
           <div class="contentBox">
-            <h3 style="color: 	#7FFF00;">Pizza Party in New York</h3>
+            <h3 style="color: 	#7FFF00;">Pizza Party in Dubai</h3>
             <br>
             <h2 class="price">52€</h2>
-            <a href="#" class="buy">Buy Now</a>
+            <a href="#" data-name="Pizza-Party-in-dubai" data-price="100" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
     </div>
     </a>
+  </div>
+
+  
+<!--shoping card-->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><a type="button" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+           
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+        </svg><sup></sup>
+        </a></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+        <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>
+</div> 
+
   </div>
   <!--Start Footer-->
   <footer class="footer background">
@@ -317,7 +358,7 @@
       </div>
   </footer>
   <!-- End Footer -->
-
+  <script src="./shopingcart.js"></script>
 
 </body>
 

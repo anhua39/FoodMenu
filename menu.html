@@ -38,20 +38,29 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./menu.html">Menu</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="./menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="About.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="ContactUs.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Blog.html">Blogs</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="Blog.html">Blogs</a>
           </li>
+          <li class="nav-item">
+            <a id="user" class="d-flex flex-column justify-content-center align-items-center" type="button" href="#" data-toggle="modal" data-target="#cart"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0      1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+               <span>Cart<sup><span class="total-count"></span></sup></span>
+             </a>
+           </li>
+           
           <li class="nav-item">
             <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
               data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="Login.html">
@@ -64,13 +73,11 @@
               <span>User</span>
             </a>
           </li>
-
         </ul>
       </div>
     </nav>
   </header>
   <!-- End header -->
-
 
   <br><br>
   <div class="footerlete backgroundlete">
@@ -83,14 +90,14 @@
       <div id="load-data-menu">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./BEVERAGE.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
                 </div>
               </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./DESSERT.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/DESSERT.PNG" width="80%" alt="#">
@@ -98,7 +105,7 @@
               </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./bread.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BREAD.PNG" width="80%" alt="#">
@@ -106,7 +113,7 @@
               </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
               <a href="./pizza.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
@@ -155,7 +162,7 @@
           <h3 style="color: 	#7FFF00;">Planet Pizza</h3>
           <br>
           <h2 class="price">70€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#"  data-name="Planet-Pizza" data-price="70" class="add-to-cart btn buy" >Buy Now</a>
         </div>
 
       </div>
@@ -170,7 +177,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Pizza Places <br> In Melbourne</h3>
           <h2 class="price">56€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Planet-Pizza-In-Melbourne" data-price="56" class="add-to-cart btn buy" >Buy Now</a>
         </div>
 
       </div>
@@ -186,7 +193,7 @@
           <h3 style="color: 	#7FFF00;"> Pizza Margherita</h3>
           <br>
           <h2 class="price">55€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Margherita" data-price="55" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -202,7 +209,7 @@
           <h3 style="color: 	#7FFF00;">Pizza Party in New York</h3>
           <br>
           <h2 class="price">51€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Party-in-NewYork" data-price="51" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -224,7 +231,7 @@
             Egypt</h3>
           <br>
           <h2 class="price">50€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Egypt" data-price="50" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -239,7 +246,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Pizza Places <br> In Melbourne</h3>
           <h2 class="price">55€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Places-In-Melbourne" data-price="55" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -257,7 +264,7 @@
           <h3 style="color: 	#7FFF00;"> Pizza Margherita</h3>
           <br>
           <h2 class="price">53€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Margherita" data-price="53" class="add-to-cart btn buy">Buy Now</a>
         </div>
       </div>
     </a>
@@ -273,7 +280,7 @@
           <h3 style="color: 	#7FFF00;">Pizza Party in dubai</h3>
           <br>
           <h2 class="price">100€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Pizza-Party-in-dubai" data-price="100" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -294,7 +301,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">CoCa Cola</h3>
           <h2 class="price">10€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="CoCaCola" data-price="10" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -309,7 +316,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">7Up</h3>
           <h2 class="price">11€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="7up" data-price="11" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -324,7 +331,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">PepSi</h3>
           <h2 class="price">15€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="PepSi" data-price="15" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -338,7 +345,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Revive </h3>
           <h2 class="price">10€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Revive" data-price="10" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -356,7 +363,7 @@
         <div class="contentBox">
           <h3 style="color: #7FFF00;"> C2 Tea </h3>
           <h2 class="price">15€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="C2" data-price="15" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -372,7 +379,7 @@
           <br>
           <h3 style="color: 	#7FFF00;">Number1</h3>
           <h2 class="price">12€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Number1" data-price="12" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -388,7 +395,7 @@
           <br>
           <h3 style="color: 	#7FFF00;">Mirinda Orange</h3>
           <h2 class="price">13€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Mirinda-Orange" data-price="13" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -403,7 +410,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Heniken</h3>
           <h2 class="price">10€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#"  data-name="Heniken" data-price="10" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -423,7 +430,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Strawberry cake</h3>
           <h2 class="price">30€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Strawberrycake" data-price="30" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -437,9 +444,9 @@
 
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">
-            3 tier flan</h3>
+           3 tier flan</h3>
           <h2 class="price">35€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="3-tier-flan" data-price="35" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -455,7 +462,7 @@
           <h3 style="color: 	#7FFF00;">
             3 tier matcha flan</h3>
           <h2 class="price">33€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#"  data-name="3-tier-matcha-flan" data-price="33" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -472,7 +479,7 @@
             french cake
           </h3>
           <h2 class="price">40€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="french-cake" data-price="40" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -491,7 +498,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">cheesecake</h3>
           <h2 class="price">50€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="cheesecake" data-price="50" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -506,7 +513,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Dadar Gulung</h3>
           <h2 class="price">35€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Dadar-Gulung" data-price="35" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -521,7 +528,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Panna Cotta</h3>
           <h2 class="price">36€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Panna-Cotta" data-price="36" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -535,7 +542,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Japanese Daifuku</h3>
           <h2 class="price">50€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Japanese-Daifuku" data-price="50" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -557,7 +564,7 @@
           <h3 style="color: 	#7FFF00;">Street Bread </h3>
           <br>
           <h2 class="price">15€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Street-Bread" data-price="15" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -573,7 +580,7 @@
           <h3 style="color: 	#7FFF00;">Bread dipped in milke</h3>
           <br>
           <h2 class="price">20€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#"  data-name="Bread-dipped-in-milke" data-price="20" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -588,7 +595,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Marinated chicken club sandwich</h3>
           <h2 class="price">25€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Marinated-chicken-club-sandwich" data-price="25" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -604,7 +611,7 @@
           <h3 style="color: 	#7FFF00;">Bread sticks pate</h3>
           <br>
           <h2 class="price">23€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Bread-sticks-pate" data-price="23" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -624,7 +631,7 @@
           <h3 style="color: 	#7FFF00;">
             Char siu bread</h3>
           <h2 class="price">25€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Char-siu-bread" data-price="25" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -639,7 +646,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Filtered flour bread</h3>
           <h2 class="price">20€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Filtered-flour-bread" data-price="20" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -654,7 +661,7 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;"> Fish cake bread</h3>
           <h2 class="price">21€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Fish-cake-bread" data-price="21" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
@@ -669,13 +676,48 @@
         <div class="contentBox">
           <h3 style="color: 	#7FFF00;">Grilled meat bread</h3>
           <h2 class="price">24€</h2>
-          <a href="#" class="buy">Buy Now</a>
+          <a href="#" data-name="Grille-meat-bread" data-price="24" class="add-to-cart btn buy">Buy Now</a>
         </div>
 
       </div>
     </div>
   </div>
 </a>
+
+
+<!--shoping card-->
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Cart
+          <a type="button" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+           
+             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+           </svg><sup><sup><span class="total-count"></span></sup></sup>
+           </a>
+         </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+        <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+  </div>
   <!--Start Footer-->
   <footer class="footer background">
     <div class="container">
@@ -717,7 +759,7 @@
       </div>
   </footer>
   <!-- End Footer -->
-
+  <script src="./shopingcart.js"></script>
 
 </body>
 
