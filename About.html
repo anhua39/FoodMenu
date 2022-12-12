@@ -28,6 +28,7 @@
 
 <body>
   <!-- Start header -->
+
   <header class="top-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="imgPiza/logo.png" alt=""></a>
@@ -35,22 +36,36 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="./menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="About.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ContactUs.html">Contact </a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="ContactUs.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Blog.html">Blogs</a>
+            <a class="nav-link d-flex justify-content-center align-items-center" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a id="user" class="d-flex flex-column navbar-collapse justify-content-end " type="button" href="#"
+              data-toggle="modal" data-target="#cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0      1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg>
+              <span>Cart<sup><span class="total-count"></span></sup></span>
+            </a>
           </li>
           <li class="nav-item">
             <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
@@ -64,15 +79,17 @@
               <span>User</span>
             </a>
           </li>
-          <li>
-            <a type="button" data-toggle="modal" data-target="#cart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-             
-               <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-             </svg><sup></sup>
-             </a>
-           </li>
-
         </ul>
+        <!-- space -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"></a>
+          </li>
+        </ul>
+        <!-- space -->
       </div>
     </nav>
   </header>
@@ -82,11 +99,6 @@
   <!-- Start About -->
   <div class="aboutUs">
     <div class="col-12">
-      <!-- banner -->
-      <div class="small-banner">
-        <p class="text-uppercase fw-bold text-center"><a href="./">Home</a> / <a href="./About.html">About Us</a></p>
-      </div>
-      <!-- banner -->
       <h2 class="fw-bold text-uppercase text-center">About Us</h2>
     </div>
     <div class="container">
@@ -242,35 +254,38 @@
     </div>
   </div>
   <!-- End Member Card -->
- <!--shoping card-->
-<!-- Modal -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><a type="button" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-           
-          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-        </svg><sup></sup>
-        </a></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="show-cart table">
-          
-        </table>
-        <div>Total price: $<span class="total-cart"></span></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order now</button>
-        <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+  <!--shoping card-->
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><a type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg><sup></sup>
+            </a></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
       </div>
     </div>
   </div>
-</div> 
+  </div>
 
   </div>
   <!--Start Footer-->

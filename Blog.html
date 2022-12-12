@@ -28,66 +28,78 @@
 
 <body>
     <!-- Start header -->
-    <header class="top-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="imgPiza/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Blog.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
-                            data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="Login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-user">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                            <span>User</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a type="button" data-toggle="modal" data-target="#cart"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                         
-                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                         </svg><sup></sup>
-                         </a>
-                       </li>
-            
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- End header -->
+
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="imgPiza/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="ContactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a id="user" class="d-flex flex-column navbar-collapse justify-content-end " type="button" href="#"
+              data-toggle="modal" data-target="#cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0      1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+              </svg>
+              <span>Cart<sup><span class="total-count"></span></sup></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="user" class=" d-flex flex-column justify-content-center align-items-center"
+              data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false" href="Login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-user">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>User</span>
+            </a>
+          </li>
+        </ul>
+        <!-- space -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-center align-items-center"></a>
+          </li>
+        </ul>
+        <!-- space -->
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+  
     <!-- Start blog -->
     <div class="blog-box">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- banner -->
-                    <div class="small-banner">
-                        <p class="text-uppercase fw-bold text-center"><a href="./">Home</a> / <a
-                                href="./Blog.html">Blog</a></p>
-                    </div>
-                    <!-- banner -->
                     <div class="heading-title text-center">
                         <h2>BLOG</h2>
                         <h4>(Food News)</h4>
@@ -98,7 +110,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-box-inner">
                         <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-01.jpg" alt="">
+                            <img class="img-fluid">
                         </div>
                         <div class="blog-detail">
                             <h4>Diverse Cuisine From </h4>
@@ -107,29 +119,8 @@
                             </ul>
                             <p>From ancient times until now, for farmers with muddy hands and feet, fields and rivers
                                 have always provided people with a source of crops. Since then, they have cherished and
-                                selected the small fish and shrimp to create a delicious sweet dish for life. The
-                                grilled snakehead fish dish as well as the multi-tasking processing has created a unique
-                                dish... </p>
-                            <p></p>
-                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
-                                Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="blog-box-inner">
-                        <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-02.jpg" alt="">
-                        </div>
-                        <div class="blog-detail">
-                            <h4>History Of Fried Chicken.</h4>
-                            <ul>
-                                <span>Post by ThanhLe | 20 November 2022</span>
-                            </ul>
-                            <p>According to records, the term "fried chicken" was first used in American English in the
-                                1830s, then appeared frequently in American cookbooks of the 1860–1870s. The origin of
-                                fried chicken in the southern states of the United States is said to be from Scottish
-                                cuisine and West African cuisine... </p>
+                                selected the small fish and shrimp to create a delicious sweet dish for life...
+                            </p>
                             <p></p><br>
                             <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
                                 Read More</a>
@@ -139,7 +130,27 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-box-inner">
                         <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-03.jpg" alt="">
+                            <img class="img-fluid">
+                        </div>
+                        <div class="blog-detail">
+                            <h4>History Fried Chicken.</h4>
+                            <ul>
+                                <span>Post by ThanhLe | 20 November 2022</span>
+                            </ul>
+                            <p>According to records, the term "fried chicken" was first used in American English in the
+                                1830s, then appeared frequently in American cookbooks of the 1860–1870s. The origin of
+                                fried chicken in the southern states of the United States...
+                            </p>
+                            <p></p><br>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
+                                Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-box-inner">
+                        <div class="blog-img-box">
+                            <img class="img-fluid">
                         </div>
                         <div class="blog-detail">
                             <h4>What Is Tacos?</h4>
@@ -148,27 +159,8 @@
                             </ul>
                             <p>Tacos are considered a traditional rustic Mexican dish. Tacos are made from corn flour or
                                 flour for a crispy outer shell with a variety of fillings inside. Let's find out what
-                                tacos are and how to make mexican tacos below... </p>
-                            <p></p><br><br><br>
-                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
-                                Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="blog-box-inner">
-                        <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-04.jpg" alt="">
-                        </div>
-                        <div class="blog-detail">
-                            <h4>Beef & Steak Repices</h4>
-                            <ul>
-                                <span>Post by ThanhLe | 20 November 2022</span>
-                            </ul>
-                            <p>Discover our selection of beef recipes, from traditional, succulent roasts and classic
-                                Beef Wellington recipes to modern favourites like burgers & curries. Get acquainted with
-                                all cuts of beef, from luxurious fillet to ribeye, to find out why beef is one of the
-                                most versatile recipe ingredients in your fridge... </p>
+                                tacos are and how to make mexican tacos below...
+                                Tacos the best taste food!... </p>
                             <p></p><br>
                             <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
                                 Read More</a>
@@ -178,7 +170,27 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-box-inner">
                         <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-05.jpg" alt="">
+                            <img class="img-fluid" >
+                        </div>
+                        <div class="blog-detail">
+                            <h4>Beef & Steak Repices</h4>
+                            <ul>
+                                <span>Post by ThanhLe | 20 November 2022</span>
+                            </ul>
+                            <p>Discover our selection of beef recipes, from traditional, succulent roasts and classic
+                                Beef Wellington recipes to modern favourites like burgers & curries. Get acquainted with
+                                all cuts of beef, from luxurious fillet to ribeye, to find out why beef is one of the...
+                            </p>
+                            <p></p><br>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
+                                Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-box-inner">
+                        <div class="blog-img-box">
+                            <img class="img-fluid" >
                         </div>
                         <div class="blog-detail">
                             <h4>Pizza Hut Chain.</h4>
@@ -188,7 +200,7 @@
                             <p>Pizza Hut Great Taste. Special Offer Combo From Only 259k With Instant Potatoes and
                                 Water. Mix more than 15 pizzas & side dishes from only 99k. Give away 1 Pepsi. Order
                                 Pizza Hut for delivery now! Order via App. Buy Pizza Get Free Snacks... </p>
-                            <p></p><br><br>
+                            <p></p><br>
                             <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
                                 Read More</a>
                         </div>
@@ -197,17 +209,17 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-box-inner">
                         <div class="blog-img-box">
-                            <img class="img-fluid" src="images/blog-img-06.jpg" alt="">
+                            <img class="img-fluid" >
                         </div>
                         <div class="blog-detail">
-                            <h4>How Make Delicious Crispy </h4>
+                            <h4>Make Delicious Crispy </h4>
                             <ul>
                                 <span>Post by ThanhLe | 20 November 2022</span>
                             </ul>
                             <p>Dishes with spicy and sour Thai sauce always have a special appeal and in this article,
                                 let's go to the kitchen to make oyster salad with Thai sauce, a combination of the fresh
                                 and sweet taste of oyster meat and the sour taste of special sauce. It will definitely
-                                make spicy food lovers unable to ignore... </p>
+                                ... </p>
                             <p></p><br>
                             <a class="btn btn-lg btn-circle btn-outline-new-white" href="blog-details.html">
                                 Read More</a>
@@ -218,36 +230,7 @@
         </div>
     </div>
     <!-- End blog -->
-<!--shoping card-->
-<!-- Modal -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><a type="button" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-             
-            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-          </svg><sup></sup>
-          </a></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <table class="show-cart table">
-            
-          </table>
-          <div>Total price: $<span class="total-cart"></span></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Order now</button>
-          <button class="clear-cart btn btn-danger">Clear Cart</button></div>
-        </div>
-      </div>
-    </div>
-  </div> 
-    </div>
+
     <!--Start Footer-->
     <footer class="footer background">
         <div class="container">
@@ -291,7 +274,7 @@
     </footer>
     <!-- End Footer -->
 
-    <script src="./shopingcart.js"></script>
+
 </body>
 
 </html>
