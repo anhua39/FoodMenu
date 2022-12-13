@@ -12,19 +12,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Site CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" href="#">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="#">
+
   <!-- Bootsrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--icon wed-->
-  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg'/>
+  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg' />
   <!-- Angular JS -->
   <script src="aj/angular.min.js"></script>
-
+  <!-- Sweet Arlert -->
+  <script src="dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 </head>
 
 <body>
@@ -109,6 +108,14 @@
         <div class="container">
           <div class="row">
             <div class="col">
+              <a href="./pizza.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
               <a href="./BEVERAGE.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
@@ -131,13 +138,7 @@
               </a>
             </div>
 
-            <div class="col">
-              <a href="./pizza.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -147,7 +148,7 @@
   <!-- End menu -->
   <!-- Menu Download -->
   <div class="menu-download">
-    <a href="#" style="background-color: #e5ba5d; width: 240px;"
+    <a style="background-color: #e5ba5d; width: 240px;"
       class="btn px-4 py-3 text-white d-flex align-items-center justify-content-between">
       <svg width="25px" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.667 191.667"
@@ -162,8 +163,8 @@
       <span>Download Menu</span>
     </a>
   </div>
-
-  <h1 class="heading"> <span>DESSERT </span></h1>
+  <div class="footerle backgroundle">
+    <h1 class="heading"> <span>DESSERT </span></h1>
     <div class="containerProduct">
 
       <a href="./details/Strawberry cake.html" style="text-decoration: none">
@@ -176,7 +177,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">STRAWBERRY CAKE</h3>
             <h2 class="price">30€</h2>
-            <a href="#" data-name="STRAWBERRY" data-price="30" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="STRAWBERRY" data-price="30" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -192,7 +193,7 @@
             <h3 style="color: 	#7FFF00;">
               Cheese Cake</h3>
             <h2 class="price">35€</h2>
-            <a href="#" data-name="CheeseCake" data-price="35" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="CheeseCake" data-price="35" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -208,7 +209,7 @@
             <h3 style="color: 	#7FFF00;">
               DAIFUKU</h3>
             <h2 class="price">33€</h2>
-            <a href="#" data-name="DAIFUKU" data-price="33" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="DAIFUKU" data-price="33" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -225,7 +226,7 @@
               MATCHA PUDDING
             </h3>
             <h2 class="price">40€</h2>
-            <a href="#" data-name="MATCHA-PUDDING" data-price="40" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="MATCHA-PUDDING" data-price="40" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -244,7 +245,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">PAN CAKE</h3>
             <h2 class="price">50€</h2>
-            <a href="#" data-name="PAN-CAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="PAN-CAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -259,7 +260,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">PEACH CAKE</h3>
             <h2 class="price">35€</h2>
-            <a href="#" data-name="PEACH-CAKE" data-price="35" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="PEACH-CAKE" data-price="35" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -274,7 +275,7 @@
           <div class="contentBox">
             <h3 style="color: 	#7FFF00;">BERRY PUDDING</h3>
             <h2 class="price">36€</h2>
-            <a href="#" data-name="BERRY-PUDDING" data-price="36" class="add-to-cart btn buy">Buy Now</a>
+            <a data-name="BERRY-PUDDING" data-price="36" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
@@ -288,13 +289,15 @@
             <div class="contentBox">
               <h3 style="color: 	#7FFF00;">TET CAKE</h3>
               <h2 class="price">50€</h2>
-              <a href="#" data-name="TETCAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
+              <a data-name="TETCAKE" data-price="50" class="add-to-cart btn buy">Buy Now</a>
             </div>
 
           </div>
         </a>
     </div>
-<!--shoping card-->
+  </div>
+
+  <!--shoping card-->
   <!-- Modal -->
   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -315,7 +318,6 @@
         </div>
         <div class="modal-body">
           <table class="show-cart table">
-
           </table>
           <div>Total price: <span class="total-cart"></span>€</div>
         </div>

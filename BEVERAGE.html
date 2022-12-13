@@ -12,19 +12,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Site CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" href="#">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="#">
+
   <!-- Bootsrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--icon wed-->
-  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg'/>
+  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg' />
   <!-- Angular JS -->
   <script src="aj/angular.min.js"></script>
-
+  <!-- Sweet Arlert -->
+  <script src="dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 </head>
 
 <body>
@@ -109,6 +108,14 @@
         <div class="container">
           <div class="row">
             <div class="col">
+              <a href="./pizza.html" class="link-categogries">
+                <div class="img-card">
+                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
+                </div>
+              </a>
+            </div>
+
+            <div class="col">
               <a href="./BEVERAGE.html" class="link-categogries">
                 <div class="img-card">
                   <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
@@ -131,13 +138,6 @@
               </a>
             </div>
 
-            <div class="col">
-              <a href="./pizza.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -162,138 +162,140 @@
       <span>Download Menu</span>
     </a>
   </div>
+
   <!--drink-->
-  <h1 class="heading"> <span> Drink </span></h1>
-  <div class="containerProduct">
+  <div class="footerle backgroundle">
+    <h1 class="heading"> <span> Drink </span></h1>
+    <div class="containerProduct">
 
-    <a href="./details/CoCaCola.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/Coca/Coca.jpg" class="pizza">
-        </div>
-
-        <div class="contentBox">
-          <h3 style="color: 	#7FFF00;">CoCa Cola</h3>
-          <h2 class="price">10€</h2>
-          <br>
-          <a href="#" data-name="COCACOLA" data-price="10" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-    </a>
-    <a href="./details/7up.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/7up/7up.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-          <h3 style="color: 	#7FFF00;">7UP LEMON</h3>
-          <h2 class="price">11€</h2>
-          <a href="#" data-name="7UPLEMON" data-price="11" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-    </a>
-    <a href="./details/PepSi.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/Heineken/Hei1.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-          <h3 style="color: 	#7FFF00;">Heineken</h3>
-          <h2 class="price">15€</h2>
-          <a href="#" data-name="Heineken" data-price="15" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-      <a href="./details/rivai.html" style="text-decoration: none">
+      <a href="./details/CoCaCola.html" style="text-decoration: none">
         <div class="card">
 
           <div class="imgBox">
-            <img src="details/product img/Drink/Mirinda/Mi1.png" class="pizza">
+            <img src="details/product img/Drink/Coca/Coca.jpg" class="pizza">
           </div>
 
           <div class="contentBox">
-            <h3 style="color: 	#7FFF00;">Mirinda</h3>
+            <h3 style="color: 	#7FFF00;">CoCa Cola</h3>
             <h2 class="price">10€</h2>
-            <a href="#" data-name="Mirinda" data-price="10" class="add-to-cart btn buy">Buy Now</a>
+            <br>
+            <a href="" data-name="COCACOLA" data-price="10" class="add-to-cart btn buy">Buy Now</a>
           </div>
 
         </div>
+      </a>
+      <a href="./details/7up.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/7up/7up.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">7UP LEMON</h3>
+            <h2 class="price">11€</h2>
+            <a href="" data-name="7UPLEMON" data-price="11" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/PepSi.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/Heineken/Hei1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">Heineken</h3>
+            <h2 class="price">15€</h2>
+            <a href="" data-name="Heineken" data-price="15" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+        <a href="./details/rivai.html" style="text-decoration: none">
+          <div class="card">
+
+            <div class="imgBox">
+              <img src="details/product img/Drink/Mirinda/Mi1.png" class="pizza">
+            </div>
+
+            <div class="contentBox">
+              <h3 style="color: 	#7FFF00;">Mirinda</h3>
+              <h2 class="price">10€</h2>
+              <a href="" data-name="Mirinda" data-price="10" class="add-to-cart btn buy">Buy Now</a>
+            </div>
+
+          </div>
+    </div>
+    <!--product4-->
+    <div class="containerProduct">
+
+      <a href="./details/C2 Tea.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/Monster/Mon1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: #7FFF00;">Monster</h3>
+            <h2 class="price">15€</h2>
+            <a href="#" data-name="Monster" data-price="15" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/Number1.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/RedBull/Red1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+
+            <h3 style="color: 	#7FFF00;">RedBull</h3>
+            <h2 class="price">12€</h2>
+            <a href="#" data-name="RedBull" data-price="12" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/Mirinda Orange.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/Sprite/Spri1.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+
+            <h3 style="color: 	#7FFF00;">Sprite Lemon</h3>
+            <h2 class="price">13€</h2>
+            <a href="#" data-name="SPRITE-LEMON" data-price="13" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+      </a>
+      <a href="./details/Heniken.html" style="text-decoration: none">
+        <div class="card">
+
+          <div class="imgBox">
+            <img src="details/product img/Drink/Pepsi/Pesi.png" class="pizza">
+          </div>
+
+          <div class="contentBox">
+            <h3 style="color: 	#7FFF00;">Pepsi</h3>
+            <h2 class="price">10€</h2>
+            <a href="#" data-name="Pepsi" data-price="10" class="add-to-cart btn buy">Buy Now</a>
+          </div>
+
+        </div>
+    </div>
+    </a>
   </div>
-  <!--product4-->
-  <div class="containerProduct">
-
-    <a href="./details/C2 Tea.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/Monster/Mon1.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-          <h3 style="color: #7FFF00;">Monster</h3>
-          <h2 class="price">15€</h2>
-          <a href="#" data-name="Monster" data-price="15" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-    </a>
-    <a href="./details/Number1.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/RedBull/Red1.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-
-          <h3 style="color: 	#7FFF00;">RedBull</h3>
-          <h2 class="price">12€</h2>
-          <a href="#" data-name="RedBull" data-price="12" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-    </a>
-    <a href="./details/Mirinda Orange.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/Sprite/Spri1.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-
-          <h3 style="color: 	#7FFF00;">Sprite Lemon</h3>
-          <h2 class="price">13€</h2>
-          <a href="#" data-name="SPRITE-LEMON" data-price="13" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-    </a>
-    <a href="./details/Heniken.html" style="text-decoration: none">
-      <div class="card">
-
-        <div class="imgBox">
-          <img src="details/product img/Drink/Pepsi/Pesi.png" class="pizza">
-        </div>
-
-        <div class="contentBox">
-          <h3 style="color: 	#7FFF00;">Pepsi</h3>
-          <h2 class="price">10€</h2>
-          <a href="#" data-name="Pepsi" data-price="10" class="add-to-cart btn buy">Buy Now</a>
-        </div>
-
-      </div>
-  </div>
-  </a>
- 
-<!--shoping card-->
+  <!--shoping card-->
   <!-- Modal -->
   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
