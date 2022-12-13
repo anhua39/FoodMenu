@@ -318,7 +318,12 @@ body {
   box-shadow: 0 3px 6px rgb(136, 101, 5), 0 3px 6px rgb(136, 101, 5);
   transform: translate(0px, -8px);
 }
-
+/* Responsive modal */
+@media (max-width:450px) {
+  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    width: 60px;
+  } 
+}
 /*product*/
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
 
