@@ -112,7 +112,7 @@ body {
   color: white;
   font-size: 100px;
   font-family: cursive;
-  /* transition-property: opacity; */
+
 }
 
 .carousel-inner .centered {
@@ -317,6 +317,21 @@ body {
 #load-data-menu .container .img-card:hover {
   box-shadow: 0 3px 6px rgb(136, 101, 5), 0 3px 6px rgb(136, 101, 5);
   transform: translate(0px, -8px);
+}
+/* Responsive modal */
+@media (max-width:450px) {
+  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    width: 65px;
+    margin-left: -20px;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    margin-left: -20px;
+    margin-right: 20px;
+  }
+  .table td, .table th {
+    padding-left: 9px;
+    padding-right: -10px;
+  }
 }
 
 /*product*/
@@ -1144,7 +1159,7 @@ header h3 {
 [data-product-detail] .product-details {
   height: 80%;
   width: 50%;
-  /*   border: 1px solid teal; */
+
   padding-left: 20px;
 }
 
@@ -1212,7 +1227,6 @@ header h3 {
 .sample-colors div {
   width: 30px;
   height: 25px;
-  /*   border: 1px solid grey; */
 }
 
 .data-product-detail button {
@@ -1260,7 +1274,6 @@ header h3 {
 /* zoom*/
 .zoom {
   padding: 50px;
-  /* background-color: rgb(234, 235, 234); */
   transition: transform .2s;
   width: 200px;
   height: 200px;
