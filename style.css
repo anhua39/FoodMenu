@@ -1617,3 +1617,13 @@ header h3 {
 .fa-ticket {
   color: #0e1fa1;
 }
+
+/*cart */
+.btn-order {
+  color: white;
+  background-color: #cfa671;
+}
+.btn-order:hover {
+  color: white;
+  background-color: #b49060;
+}
