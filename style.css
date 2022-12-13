@@ -704,7 +704,7 @@ h1 {
 
 /* FOOTER */
 .footer {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: -10px;
 }
 
@@ -834,12 +834,14 @@ h1 {
 /* ABOUT US */
 .aboutUs {
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .aboutUs .col-12 h2 {
   font-family: cursive;
   color: #a88254;
-  margin-bottom: -70px;
+  margin-bottom: -20px;
+  margin-top: 40px;
 }
 
 .aboutUs .img-fluid {
@@ -858,7 +860,6 @@ h1 {
 
 .aboutUs .container .row {
   padding-top: 100px;
-  padding-bottom: 10px;
 }
 
 /* REPONSIVE ABOUT US */
@@ -1016,7 +1017,7 @@ h1 {
 
 /* BLOG */
 .blog-box {
-  padding-top: 100px;
+  padding-top: 122px;
   padding-bottom: 50px;
 }
 
@@ -1072,7 +1073,6 @@ h1 {
 }
 
 .blog-box {
-  background-image: url(imgPiza/Blog1.jpg);
   height: 100%;
   width: 100%;
   background-position: center;
@@ -1276,7 +1276,7 @@ header h3 {
 
 /* BLOG */
 .projcard-container {
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 /* Actual Code: */
