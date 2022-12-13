@@ -318,21 +318,6 @@ body {
   box-shadow: 0 3px 6px rgb(136, 101, 5), 0 3px 6px rgb(136, 101, 5);
   transform: translate(0px, -8px);
 }
-/* Responsive modal */
-@media (max-width:450px) {
-  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
-    width: 65px;
-    margin-left: -20px;
-  }
-  .btn:not(:disabled):not(.disabled) {
-    margin-left: -20px;
-    margin-right: 20px;
-  }
-  .table td, .table th {
-    padding-left: 9px;
-    padding-right: -10px;
-  }
-}
 
 /*product*/
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
