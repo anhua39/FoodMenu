@@ -7,7 +7,10 @@ body {
 }
 
 /* HEADER */
-
+ .heading span{
+  font-family: cursive;
+  color: #977a54;
+}
 /* NAV BAR */
 .top-navbar .navbar {
   position: fixed;
@@ -1399,8 +1402,9 @@ header h3 {
 }
 
 .projcard-title {
-  font-family: 'Voces', 'Open Sans', arial, sans-serif;
+  font-family: cursive;
   font-size: 24px;
+  color: #a88254;
 }
 
 .projcard-subtitle {
