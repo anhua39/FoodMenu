@@ -12,18 +12,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Site CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Responsive CSS -->
-  <link rel="stylesheet" href="#">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="#">
+
   <!-- Bootsrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--icon wed-->
-  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg'/>
+  <link rel='shortcut icon' href='./imgPiza/Special-offer1 (1).jpg' />
   <!-- Angular JS -->
   <script src="aj/angular.min.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -101,7 +101,8 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="imgPiza/Slide3.jpg" alt="First slide">
-        <div class="centered">Welcome<br> Shale Pizza
+        <div class="centered">
+          Welcome<br> Shale Pizza
           <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="./menu.html">ODER NOW</a></p>
         </div>
       </div>
@@ -128,29 +129,60 @@
     </a>
   </div>
   <!-- End slide -->
-  <!--start About Us-->
-  <div class="footerle backgroundle">
-    <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="imgPiza/about.jpg" alt="#" class="img-fluid">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-            <div class="inner-column">
-              <h2><span>History of Pizza</span></h2>
-              <hr>
-              <p>A precursor of pizza was probably the focaccia, a flatbread known to the Romans as panis focacius, to
-                which toppings were then added. Modern pizza evolved from similar flatbread dishes in Naples, Italy, in
-                the 18th or early 19th century... </p>
+  <div data-aos="fade-right">
+    <!--start About Us-->
+    <div class="footerle backgroundle">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="imgPiza/about.jpg" alt="#" class="img-fluid">
             </div>
-            <p class="about-info"><a href="About.html">More Info</a></p>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+              <div class="inner-column">
+                <h2><span>History of Pizza</span></h2>
+                <hr>
+                <p>A precursor of pizza was probably the focaccia, a flatbread known to the Romans as panis focacius, to
+                  which toppings were then added. Modern pizza evolved from similar flatbread dishes in Naples, Italy,
+                  in
+                  the 18th or early 19th century... </p>
+              </div>
+              <p class="about-info"><a href="About.html">More Info</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+  </div>
+
+  <!--start About Us 1-->
+  <div data-aos="fade-left">
+    <div class="footerle backgroundle">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+              <div class="inner-column">
+                <h2><span>Pancake of Vietnamese Cuisine</span></h2>
+                <hr>
+                <p>Bánh xèo – also known as crispy Vietnamese pancake, is a famous street food
+                  which is widely believed to originate from France during its occupation of Vietnam. The word xèo
+                  depicts the sizzling sound when pouring the rice batter into the hot skillet.... </p>
+              </div>
+              <p class="about-info"><a href="blog-details.html">More Info</a></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="./imgPiza/imgblogdetail/hinh1.jpg" alt="#" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End About -->
+
+  <!-- End About 1 -->
+
   <div class="footerlete backgroundlete">
     <!--start Recipes-->
     <div class="recipes">
@@ -158,57 +190,57 @@
       </div>
     </div>
     <!--End Recipes-->
+    <div data-aos="fade-up">
+      <!-- Start menu -->
+      <div class="section-categories pt-5 pb-5">
+        <div class="text-center">
+          <h1 class="d-inline-block text-uppercase fw-bold text-title-decoration">The Menu Foods</h1>
+        </div>
+        <!-- product promo -->
+        <div id="load-data-menu">
+          <div class="container">
 
-    <!-- Start menu -->
-    <div class="section-categories pt-5 pb-5">
-      <div class="text-center">
-        <h1 class="d-inline-block text-uppercase fw-bold text-title-decoration">The Menu Foods</h1>
-      </div>
-      <!-- product promo -->
-      <div id="load-data-menu">
-        <div class="container">
-          
-          <div class="row">
-            <div class="col">
-              <a href="./pizza.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
-            <div class="col">
+            <div class="row">
+              <div class="col">
+                <a href="./pizza.html" class="link-categogries">
+                  <div class="img-card">
+                    <img src="imgPiza/MENU/PIZZA.PNG" width="80%" alt="#">
+                  </div>
+                </a>
+              </div>
+              <div class="col">
 
-              <a href="./BEVERAGE.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./DESSERT.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/DESSERT.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
+                <a href="./BEVERAGE.html" class="link-categogries">
+                  <div class="img-card">
+                    <img src="imgPiza/MENU/BEVERAGE.PNG" width="80%" alt="#">
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="./DESSERT.html" class="link-categogries">
+                  <div class="img-card">
+                    <img src="imgPiza/MENU/DESSERT.PNG" width="80%" alt="#">
+                  </div>
+                </a>
+              </div>
 
-            <div class="col">
-              <a href="./bread.html" class="link-categogries">
-                <div class="img-card">
-                  <img src="imgPiza/MENU/BREAD.PNG" width="80%" alt="#">
-                </div>
-              </a>
-            </div>
+              <div class="col">
+                <a href="./bread.html" class="link-categogries">
+                  <div class="img-card">
+                    <img src="imgPiza/MENU/BREAD.PNG" width="80%" alt="#">
+                  </div>
+                </a>
+              </div>
 
-           
+
+            </div>
           </div>
         </div>
       </div>
+      <!-- End menu -->
     </div>
   </div>
   </div>
-  <!-- End menu -->
-
 
   <!--start Recipes1-->
   <div class="recipes1">
@@ -216,69 +248,72 @@
     </div>
   </div>
   <!--End Recipes1-->
-
-  <!-- Start Special Offer -->
-  <div class="special-offer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p class="text-center">SPECIAL OFFER</p>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <!-- Start Special Offer -->
+    <div class="special-offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center">SPECIAL OFFER</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="imgPiza/Special-offer1 (1).jpg" alt="" width="100%">
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="imgPiza/Special-offer2 (1).jpg" alt="" width="100%">
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="imgPiza/Special-offer3 (1).jpg" alt="" width="100%">
+          </div>
+          <div class="col-lg-12">
+            <p class="special-viewmore"><a href="menu.html">View more</a></p>
+          </div>
+        </div>
+        <br>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <img src="imgPiza/Special-offer1 (1).jpg" alt="" width="100%">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="imgPiza/Special-offer2 (1).jpg" alt="" width="100%">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="imgPiza/Special-offer3 (1).jpg" alt="" width="100%">
-        </div>
-        <div class="col-lg-12">
-          <p class="special-viewmore"><a href="menu.html">View more</a></p>
-        </div>
-      </div>
-      <br>
+      <!-- End Special Offer -->
     </div>
-    <!-- End Special Offer -->
-   <!--shoping card-->
-  <!-- Modal -->
-  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Your Cart
-            <a type="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                class="bi bi-cart2" viewBox="0 0 16 16">
 
-                <path
-                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-              </svg><sup><sup><span class="total-count"></span></sup></sup>
-            </a>
-          </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <table class="show-cart table">
+    <!--shoping card-->
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Your Cart
+              <a type="button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-cart2" viewBox="0 0 16 16">
 
-          </table>
-          <div>Total price: <span class="total-cart"></span>€</div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-order">Order now</button>
-          <button class="clear-cart btn btn-danger">Clear Cart</button>
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg><sup><sup><span class="total-count"></span></sup></sup>
+              </a>
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+
+            </table>
+            <div>Total price: <span class="total-cart"></span>€</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-order">Order now</button>
+            <button class="clear-cart btn btn-danger">Clear Cart</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
   </div>
-  
+
 
   <!--Start Footer-->
   <footer class="footer background">
@@ -322,8 +357,12 @@
   </footer>
   <!-- End Footer -->
 
+  <script>
+    AOS.init();
+  </script>
 
   <script src="./shopingcart.js"></script>
+
 </body>
 
 </html>
